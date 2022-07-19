@@ -342,7 +342,7 @@ Added By - {}
     LOG_TEXT_P = """#NewUser Started Bot
 ID - <code>{}</code>
 Name - {}
-Bot - <a href=https://t.me/{}>{}</a>"""
+Bot - @MHMovieBot"""
 
     ZOMBIES_TXT = """Help: <b>Zombies</b>
 
