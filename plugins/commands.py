@@ -98,8 +98,9 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        await message.reply("<b>Wᴀɪᴛ...Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
-        await asyncio.sleep(3)
+        m=await message.reply("<b>Wᴀɪᴛ...Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        await asyncio.sleep(2)
+        await m.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
