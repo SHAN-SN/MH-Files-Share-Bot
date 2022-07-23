@@ -98,7 +98,9 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        m=await message.reply("<b>Wᴀɪᴛ...Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        r=await message.reply("<b>Wᴀɪᴛ ▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        a=await r.edit('▣▣▢')
+        m=await a.edit('▣▣▣')
         await asyncio.sleep(2)
         await m.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
@@ -147,7 +149,6 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        await message.delete()
         
         return
     elif data.split("-", 1)[0] == "DSTORE":
