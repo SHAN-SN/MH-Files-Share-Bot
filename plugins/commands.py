@@ -98,11 +98,13 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        r=await message.reply("<b>Wᴀɪᴛ ▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
-        a=await r.edit('<b>Wᴀɪᴛ ▣▣▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
-        m=await a.edit('<b>Wᴀɪᴛ ▣▣▣ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁')
-        await asyncio.sleep(2)
-        await m.delete()
+        s=await message.reply("<b>Wᴀɪᴛ ▣▢▢▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        h=await s.edit('<b>Wᴀɪᴛ ▣▣▢▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        a=await h.edit('<b>Wᴀɪᴛ ▣▣▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        n=await a.edit('<b>Wᴀɪᴛ ▣▣▣▣▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        d=await n.edit('<b>Wᴀɪᴛ ▣▣▣▣▣ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        await asyncio.sleep(1)
+        await d.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
