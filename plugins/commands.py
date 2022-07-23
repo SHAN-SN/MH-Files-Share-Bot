@@ -99,8 +99,8 @@ async def start(client, message):
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
         r=await message.reply("<b>Wᴀɪᴛ ▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
-        a=await r.edit('▣▣▢')
-        m=await a.edit('▣▣▣')
+        a=await r.edit('<b>Wᴀɪᴛ ▣▣▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        m=await a.edit('<b>Wᴀɪᴛ ▣▣▣ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁')
         await asyncio.sleep(2)
         await m.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
