@@ -340,9 +340,9 @@ Added By - {}
 """
 
     LOG_TEXT_P = """#NewUser Started Bot
-ID - <code>{}</code>
+#ID{}
 Name - {}
-Bot - BOT</i></b> - <b><a href=https://t.me/MHMovieBot>🎥『സിനിമാക്കാരൻ』</a></b><b>"""
+BOT</i></b> - <b><a href=https://t.me/MHMovieBot>🎥『സിനിമാക്കാരൻ』</a></b><b>"""
 
     ZOMBIES_TXT = """Help: <b>Zombies</b>
 
