@@ -101,7 +101,7 @@ async def start(client, message):
         s=await message.reply("<b>Wᴀɪᴛ ▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
         h=await s.edit('<b>Wᴀɪᴛ ▣▣▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
         a=await h.edit('<b>Wᴀɪᴛ ▣▣▣ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
-        await asyncio.sleep(0)
+        await asyncio.sleep(1)
         await a.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
         file_id = data.split("-", 1)[1]
