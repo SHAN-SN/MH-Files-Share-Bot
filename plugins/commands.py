@@ -104,6 +104,9 @@ async def start(client, message):
         await asyncio.sleep(1)
         await a.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
+        w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
+        await asyncio.sleep(1)
+        await w.delete()
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -149,8 +152,12 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        
+        await msgs.delete()
+        w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
+        await asyncio.sleep(1)
+        await w.delete()
         return
+
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("<b>Wᴀɪᴛ...Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
         b_string = data.split("-", 1)[1]
