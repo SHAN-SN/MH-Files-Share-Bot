@@ -152,7 +152,7 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        await msg.delete()
+        await file.delete()
         w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
         await asyncio.sleep(5)
         await w.delete()
