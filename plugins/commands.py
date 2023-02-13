@@ -152,7 +152,12 @@ async def start(client, message):
         return
 
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>Wᴀɪᴛ...Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        s=await message.reply("<b>Wᴀɪᴛ ▣▢▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>")
+        h=await s.edit('<b>Wᴀɪᴛ ▣▣▢ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        a=await h.edit('<b>Wᴀɪᴛ ▣▣▣ Gᴇɴᴇʀᴀᴛɪɴɢ Yᴏᴜʀ Fɪʟᴇs 📁</b>')
+        await asyncio.sleep(1)
+        await a.delete()
+        sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
