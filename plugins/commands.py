@@ -105,7 +105,7 @@ async def start(client, message):
         await a.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
         w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
-        await asyncio.sleep(1)
+        await asyncio.sleep(15)
         await w.delete()
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
@@ -152,9 +152,9 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        await msgs.delete()
+        await msg.delete()
         w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
-        await asyncio.sleep(1)
+        await asyncio.sleep(5)
         await w.delete()
         return
 
