@@ -104,9 +104,6 @@ async def start(client, message):
         await asyncio.sleep(1)
         await a.delete()
         sts = await message.reply_sticker("CAACAgUAAxkBAAEFWVti25SwvkiSDeql97jTaR5dvzAeMwACJQYAAnk7sFYOcwnT_douzykE")
-        w=await message.reply("<b>⚠️ ഫയലുകൾ ഇവിടെ നിന്ന് മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n Download the files after transferring them from here. The files will be deleted automatically</b>")
-        await asyncio.sleep(3)
-        await w.delete()
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
